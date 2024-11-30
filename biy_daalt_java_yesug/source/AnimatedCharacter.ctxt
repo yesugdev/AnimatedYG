@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=AnimatedCharacter
+comment1.params=
+comment1.target=AnimatedCharacter()
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ skill()
+comment4.params=
+comment4.target=void\ handleMovement()
+comment5.params=
+comment5.target=boolean\ isMoving()
+comment6.params=
+comment6.target=void\ animate()
+comment7.params=
+comment7.target=void\ shoot()
+comment8.params=
+comment8.target=void\ showDebugInfo()
+numComments=9
