@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=enemy
+comment0.text=\n\ Enemy\ class\n
+comment1.params=
+comment1.target=enemy()
+comment2.params=
+comment2.target=void\ act()
+comment3.params=world\ count
+comment3.target=void\ spawnEnemies(greenfoot.World,\ int)
+comment3.text=\n\ \u0421\u0430\u043D\u0430\u043C\u0441\u0430\u0440\u0433\u04AF\u0439\ \u0431\u0430\u0439\u0440\u043B\u0430\u043B\u0434\ \u043C\u04E9\u0440,\ \u0431\u0430\u0433\u0430\u043D\u044B\u043D\ \u0434\u0430\u0433\u0443\u0443\u0445\ \u0442\u044D\u0433\u0448\ \u0445\u044D\u043C\u0442\u044D\u0439\ Enemy\ \u04AF\u04AF\u0441\u0433\u044D\u0445\n
+comment4.params=
+comment4.target=void\ moveTowardsCharacter()
+comment4.text=\n\ AnimatedCharacter\ \u043E\u0431\u044A\u0435\u043A\u0442\ \u0440\u0443\u0443\ \u0445\u04E9\u0434\u04E9\u043B\u0433\u04E9\u0445\n
+comment5.params=
+comment5.target=void\ checkOutOfBounds()
+comment5.text=\n\ \u0414\u044D\u043B\u0433\u044D\u0446\u044D\u044D\u0441\ \u0433\u0430\u0440\u0432\u0430\u043B\ \u0443\u0441\u0442\u0433\u0430\u0445\n
+numComments=6

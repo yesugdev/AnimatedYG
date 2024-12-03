@@ -1,28 +1,26 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;
 
-/**
- * Write a description of class skill1 here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class skill1 extends Actor
-{
-    /**
-     * Act - do whatever the skill1 wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+public class skill1 extends Actor {
     private int speed = 5;
-    public void act()
-    {
-       moveProjectile();
-    }
-    private void moveProjectile() {
-        // Move the projectile in the direction it is facing
-        move(speed);
+
+    public void act() {
+        // First check if we're at the edge
+        if (isAtEdge() && getWorld() != null) {
+            getWorld().removeObject(this);
+            return; // Exit early if removed
+        }
         
-        // If the projectile goes out of the world, remove it
-        if (isAtEdge()) {
+        // Then handle movement and collision
+        move(speed);
+        checkCollisionWithEnemy();
+    }
+
+    private void checkCollisionWithEnemy() {
+        if (getWorld() == null) return;
+        
+        Actor enemy1 = getOneIntersectingObject(enemy.class);
+        if (enemy1 != null) {
+            getWorld().removeObject(enemy1);
             getWorld().removeObject(this);
         }
     }
